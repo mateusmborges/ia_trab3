@@ -90,10 +90,10 @@ var MAP_CONFIG = {
 //Ui variable
 var UI = SpreadsheetApp.getUi();
 
-//Sheet variable
+//Sheet variable - Change if needed
 var SHEET = SpreadsheetApp.getActive().getSheetByName("Mapa");
 
-//Drive folder ID
+//Drive folder ID - Change to your folder
 var FOLDER_ID = "1WHEB9iyIcEZIzvanNgl28fN-Gx9lKM7O"; 
 
 //Heuristic number. 2 for Manhattan Distance, 5 for Euclidean Distance

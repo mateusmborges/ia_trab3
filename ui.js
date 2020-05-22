@@ -8,7 +8,7 @@
 /** 
  * Apps Script Trigger. Add menu when spreadsheet is opened.
  */
-function onOpen() {
+function onOpen(e) {
   var spsh = SpreadsheetApp.getActive();
   
   var menu = [

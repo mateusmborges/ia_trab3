@@ -45,6 +45,7 @@ function depthFirstSearch() {
   
   //defines the order of preference of the operators
   var order = ["down", "right", "up", "left"];
+  order.shuffle();
   
   //grabs the last cell on the stack
   let last_visited = stack[stack.length-1];
@@ -54,6 +55,8 @@ function depthFirstSearch() {
   if(!description_last_visited.isEndCell()){  
     //repeat while stack is not empty
     while(stack.length > 0){
+      order.shuffle();
+      
       //choose a neighbor based on the order defined above
       var visited = evaluateNeighborsDFS(last_visited,order,description_map,height,width,end_cell);
       
